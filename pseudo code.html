@@ -1,0 +1,73 @@
+<!-- GENERAL SCOPE STATEMENT
+
+write an app that produces dynamic search data in the web page search results.
+The app will open up a lightbox on click of search icon with a search bar that allows the user to type and see a list of options by category
+
+1) General Information
+2) Cookery Classes
+3) Chefs
+
+
+The website will be built on my local server using flywheel and will be for a ficticous cookery school.
+There will be four sources of information on the website
+1) Pages
+2) Posts
+3) Custom Post Type for Events, with a custom field for the data
+4) Custom post types for Chefs with a custom field for the type of cooking they specialise in.
+5) The two custom posts will have category relationshops e.g. Indian Food, Thai Food, French Food, Bread Making etc..
+6) Load fontawesome library
+
+The site will use the WordPress REST API -->
+
+<!-- INITIAL SET UP AFTER WP SITE AND POSTS SET UP
+
+Set up dev environment with NPM and Yarn/Gulp to create a bundled.js file
+Create and enqueue JS file with jquery dependency -->
+
+<!-- JS PRINCIPLES USED
+will use class and constructor functions
+will use object programming techniques -->
+
+<script>
+  // CREATE OVERLAY
+  // create div and classes in footer.php (for initial testing). Later I will append to the body.
+  // div for the overall search display or active
+  // div for the close button
+  // div for the input field with id for hooking later in JS
+
+  //CREAT THE OBJECT
+  // creeate methods for opening and closing the overlay
+  // create events using selector to get the search icon
+  // set up the properties in constuctor() for getting the open, close and the overlay
+  // create event listeners for when button open is clicked
+  // set up event listeners when close button is clicked
+  // ensure that the constuctor calls the event listeners when the page is loaded
+  // write methods for adding and removing classes when listeners are triggered
+
+  // USER EXPERIENCE / THE VIEW
+  // function so that JS does not send request to server on every key stroke
+  // consider using keyboard events for opening and closing the overlay ??!
+  // provide loader clue / e.g. spinner animation when user is adding search query
+  // create HTML elements to append to the 'body'
+  // ensure search field is auto 'on-focus' when overlay is opened.
+  // error handling required
+
+  // JSON / API
+  // use /wp-json/wp/v2/posts?search=xxxxxxx    query
+  // create requests for pages and custom posts used
+  // try and create my own custom rest url so that minimum data is called.
+  // use localize script (name of js file, variable name, array of data we want to make available) to make rest url relative
+  // in register_post_type add to array,  'show_in_rest' => true,
+
+  // PLAN
+  // Set up the development environment  // revisit week 4
+  // Create website with Pages, Posts and Custom Posts
+  // Plan the component structure  // revisit Vanilla Press V2 Project from Week 8 //I am only anticipating 100-150 lines of code (is it worth splitting into components in separate files??)
+  // Create the Overlay // revisit Week 2
+  // Set up the REST API // revisit Week 8  // look at Create Custom Endpoints
+  // Write code for getting JSON data into the search overlay for Pages and Posts
+  // Write code for getting JSON data into the search overlay for Custom Posts
+
+  // BONUS FEATURE
+  // Try and get search to also list relationships between Pages, Posts and Custom Posts
+</script>
