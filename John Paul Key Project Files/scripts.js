@@ -1,5 +1,5 @@
   class Search {
-    // 1. Describe and create/initiate the object. Create thr properties which describes the Object.
+    // 1. Describe and create/initiate the object. Create the properties which describes the Object.
     constructor() {
       //needs to run first as it has the ids and classes needed for other functions to run.
       this.addSearchHTML();
