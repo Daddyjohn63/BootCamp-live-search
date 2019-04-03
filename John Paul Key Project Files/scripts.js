@@ -1,4 +1,3 @@
-jQuery(document).ready(function($) {
   class Search {
     // 1. Describe and create/initiate the object. Create thr properties which describes the Object.
     constructor() {
@@ -243,4 +242,3 @@ jQuery(document).ready(function($) {
   }
 
   var bootSearch = new Search();
-});
